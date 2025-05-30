@@ -10,6 +10,11 @@
   --color-text: #E2E2E2;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+}
+
 body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,23 +24,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--color-background);
   color: var(--color-text);
+  overflow-x: hidden;
 }
 
-.cosmic-gradient {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+::selection {
+  background: rgba(130, 101, 167, 0.3);
+  color: #ffffff;
 }
 
-.glass-effect {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.hover-glow {
-  transition: all 0.3s ease;
+::-webkit-scrollbar-track {
+  background: rgba(26, 26, 46, 0.8);
 }
 
-.hover-glow:hover {
-  box-shadow: 0 0 15px rgba(130, 101, 167, 0.3);
-  transform: translateY(-2px);
+::-webkit-scrollbar-thumb {
+  background: rgba(68, 49, 141, 0.8);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(130, 101, 167, 0.8);
 }
