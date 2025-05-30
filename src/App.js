@@ -33,7 +33,7 @@ function App() {
         className="flex justify-between items-center mb-12 relative z-10"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] }}
+        transition={{ duration: 0.8, ease: [0.6, 0.05, 0.01, 0.9] }}
       >
         <motion.h1 
           className="text-5xl font-playfair bg-clip-text text-transparent bg-gradient-to-r from-purple-300 via-pink-200 to-purple-300"
